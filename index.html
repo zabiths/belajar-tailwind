@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom spacing -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Belajar TailwindCSS</title>
+    <!-- <style type="text/tailwindcss">
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1>Mari Belajar TailwindCSS</h1>
+
+    <section class="mb-10">
+      <!-- margin, padding adalah spacing -->
+      <h2>Spacing</h2>
+      <div class="m-13">Margin</div>
+      <div class="py-8">Padding</div>
+    </section>
+
+    <section class="mb-10">
+      <h2>Sizing</h2>
+      <h2>Sizing</h2>
+      <div class="w-32 h-32">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-mono">
+      <h2 class="mb-4">Belajar Typography pada TailwindCSS</h2>
+      <div class="mb-4">By Rendy, 6 Mei 2024</div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quae tempore deserunt laboriosam! Consectetur ullam iusto impedit autem fugit cumque laboriosam ipsa sit ad, eius assumenda quis sequi quaerat harum accusantium
+        dicta, dolore architecto alias facilis at aliquam repellendus excepturi odit! Beatae neque numquam debitis nobis nihil harum aspernatur eius?
+      </p>
+      <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere laboriosam quod illum nisi labore repellendus excepturi quisquam hic dolorum est maiores minus, omnis, similique dolore fugit eveniet. Rem, ea.</p>
+    </section>
+  </body>
+</html>
