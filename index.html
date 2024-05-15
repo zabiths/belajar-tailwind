@@ -24,6 +24,16 @@
               wpu: "#bada55",
               kopi: "#c0ffee",
             },
+            animation: {
+              "spin-slow": "spin 3s linear infinite",
+              goyang: "goyang 1s ease-in-out infinite",
+            },
+            keyframes: {
+              goyang: {
+                "0%, 100%": { transform: "rotate(-3deg)" },
+                "50%": { transform: "rotate(3deg)" },
+              },
+            },
           },
         },
       };
@@ -131,8 +141,10 @@
     <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:rotate-180 hover:bg-pink-500 transition origin-top-left"></div>
 
     <div class="w-40 h-40 bg-sky-500 mx-auto mt-20 group">
-      <div class="w-full h-full bg-slate-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition"></div>
+      <div class="w-full h-full bg-slate-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000"></div>
     </div>
+
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg mt-20 animate-goyang"></div>
 
     <div class="mb-96"></div>
 
